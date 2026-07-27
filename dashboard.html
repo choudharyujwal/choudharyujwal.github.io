@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UJWAL CHOUDHARY | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #f5f7f9;
+            color: #18222d;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+
+            background: rgba(245, 247, 249, 0.95);
+            border-bottom: 1px solid #e1e5e8;
+
+            padding: 18px 7%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            
+    font-weight: 600;
+    color: #1d5c63;
+    text-decoration: none;
+}
+        
+
+        nav a {
+            color: #596570;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #1d5c63;
+        }
+
+        /* MAIN */
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 70px 25px;
+        }
+
+        section {
+            padding: 70px 0;
+            border-bottom: 1px solid #e1e5e8;
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        /* HERO */
+
+        .hero {
+            padding-top: 40px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .hero h2 {
+            color: #1d5c63;
+            font-size: 19px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            color: #65717c;
+        }
+
+        /* HEADINGS */
+
+        .section-label {
+            color: #1d5c63;
+            font-size: 13px;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
+        /* ABOUT */
+
+        .about-text {
+    max-width: 750px;
+    color: #65717c;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+        /* SKILLS */
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background: white;
+            border: 1px solid #e1e5e8;
+            padding: 9px 15px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        /* PROJECTS */
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .project {
+            background: white;
+            border: 1px solid #e1e5e8;
+            padding: 25px;
+            border-radius: 5px;
+        }
+
+        .project h4 {
+            color: #1d5c63;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            color: #65717c;
+            font-size: 14px;
+        }
+
+        /* CERTIFICATIONS */
+
+        .certifications p {
+            color: #65717c;
+            margin-bottom: 8px;
+        }
+
+        /* RESUME */
+
+        .resume-btn:disabled
+        {
+            opacity: 0.6;
+    cursor: not-allowed;
+            display: inline-block;
+            margin-top: 10px;
+            padding: 12px 25px;
+
+            background: #1d5c63;
+            color: white;
+
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .resume-btn:hover {
+            background: #16494f;
+        }
+
+        /* CONTACT */
+
+        .contact-links a {
+            color: #1d5c63;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        /* FOOTER */
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #89939b;
+            font-size: 13px;
+            border-top: 1px solid #e1e5e8;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            nav {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav a {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .projects {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 50px 0;
+            }
+
+        }
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <a href="index.html" class="logo">
+    UJWAL CHOUDHARY
+</a>
+
+        <div>
+
+            <a href="#about">About</a>
+
+            <a href="#skills">Skills</a>
+
+            <a href="#projects">Projects</a>
+
+            <a href="#certifications">Certifications</a>
+
+            <a href="#resume">Resume</a>
+
+            <a href="#contact">Contact</a>
+
+        </div>
+
+    </nav>
+
+
+    <main>
+
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <div class="section-label">
+                CYBERSECURITY PROFESSIONAL
+            </div>
+
+            <h1>
+                UJWAL CHOUDHARY
+            </h1>
+
+            <h2>
+                Aspiring SOC Analyst
+            </h2>
+
+            <p>
+                Focused on Security Monitoring, Threat Detection,
+                Incident Investigation and Cyber Defense.
+            </p>
+
+        </section>
+
+
+        <!-- ABOUT -->
+
+        <section id="about">
+
+            <div class="section-label">
+                01 // ABOUT
+            </div>
+
+            <h3>
+                About Me
+            </h3>
+
+            <p class="about-text">
+    I am a Computer Science Engineering graduate with a strong interest in Cybersecurity and Security Operations. My focus is on building practical skills in Security Monitoring, SIEM, Threat Detection and Incident Investigation. I am continuously learning and gaining hands-on experience through cybersecurity labs, projects and real-world security scenarios, with the goal of starting my career as a SOC Analyst.
+</p>
+
+        </section>
+
+
+        <!-- SKILLS -->
+
+        <section id="skills">
+
+            <div class="section-label">
+                02 // SKILLS
+            </div>
+
+            <h3>
+                Technical Skills
+            </h3>
+
+            <div class="skills">
+
+                <div class="skill">Networking</div>
+
+                <div class="skill">Linux</div>
+
+                <div class="skill">Microsoft Sentinel</div>
+
+                <div class="skill">KQL</div>
+
+                <div class="skill">Wazuh</div>
+
+                <div class="skill">Wireshark</div>
+
+                <div class="skill">SIEM</div>
+
+                <div class="skill">MITRE ATT&CK</div>
+
+                <div class="skill">Threat Detection</div>
+
+                <div class="skill">Cyber Threat Intelligence</div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJECTS -->
+
+        <section id="projects">
+
+            <div class="section-label">
+                03 // PROJECTS
+            </div>
+
+            <h3>
+                Selected Projects
+            </h3>
+
+
+            <div class="projects">
+
+
+                <div class="project">
+
+                    <h4>
+                        Microsoft Sentinel SOC Lab
+                    </h4>
+
+                    <p>
+                        Security monitoring and threat detection lab
+                        using Microsoft Sentinel and KQL.
+                    </p>
+
+                </div>
+
+
+                <div class="project">
+
+                    <h4>
+                        Wazuh Home SOC
+                    </h4>
+
+                    <p>
+                        Practical security monitoring environment
+                        focused on log analysis and alert investigation.
+                    </p>
+
+                </div>
+
+
+                <div class="project">
+
+                    <h4>
+                        APT29 Threat Intelligence
+                    </h4>
+
+                    <p>
+                        Threat intelligence research and MITRE ATT&CK
+                        mapping of the APT29 threat actor.
+                    </p>
+
+                </div>
+
+
+                <div class="project">
+
+                    <h4>
+                        Phishing Investigation
+                    </h4>
+
+                    <p>
+                        Investigation of suspicious indicators and
+                        potential IOCs in a simulated phishing incident.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- CERTIFICATIONS -->
+
+        <section id="certifications">
+
+            <div class="section-label">
+                04 // CERTIFICATIONS
+            </div>
+
+            <h3>
+                Certifications & Learning
+            </h3>
+
+            <div class="certifications">
+
+                <p>• Microsoft Security & Microsoft Sentinel Learning</p>
+
+                <p>• Cybersecurity Labs & Practical Training</p>
+
+                <p>• SIEM & Threat Detection Training</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- RESUME -->
+
+        <section id="resume">
+
+            <div class="section-label">
+                05 // RESUME
+            </div>
+
+            <h3>
+                Professional Resume
+            </h3>
+
+            <p class="about-text">
+                View my resume to learn more about my education,
+                technical skills, projects and cybersecurity journey.
+            </p>
+
+            <button class="resume-btn" disabled>
+    Resume Coming Soon
+</button>
+            
+
+        </section>
+
+
+        <!-- CONTACT -->
+
+        <section id="contact">
+
+            <div class="contact-links">
+
+    <a href="https://www.linkedin.com/in/ujwal-choudhary-cybersecurity" target="_blank">
+        LinkedIn
+    </a>
+
+    <a href="https://github.com/choudharyujwal" target="_blank">
+        GitHub
+    </a>
+
+    <a href="https://www.instagram.com/latent_kernel" target="_blank">
+        Instagram
+    </a>
+
+</div>
+
+        </section>
+
+
+    </main>
+
+
+    <footer>
+
+        © 2026 Ujwal Choudhary · Cybersecurity Portfolio
+
+    </footer>
+
+
+</body>
+</html>
