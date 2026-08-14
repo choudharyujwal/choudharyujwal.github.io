@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>UJWAL CHOUDHARY | Portfolio</title>
+    <title>UJWAL CHOUDHARY | SOC Analyst Portfolio</title>
 
     <style>
         * {
@@ -42,12 +42,10 @@
         }
 
         .logo {
-            
-    font-weight: 600;
-    color: #1d5c63;
-    text-decoration: none;
-}
-        
+            font-weight: 600;
+            color: #1d5c63;
+            text-decoration: none;
+        }
 
         nav a {
             color: #596570;
@@ -101,6 +99,23 @@
             color: #65717c;
         }
 
+        .hero-tags {
+            margin-top: 22px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .hero-tag {
+            background: white;
+            border: 1px solid #e1e5e8;
+            color: #1d5c63;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            letter-spacing: 0.5px;
+        }
+
         /* HEADINGS */
 
         .section-label {
@@ -119,13 +134,28 @@
         /* ABOUT */
 
         .about-text {
-    max-width: 750px;
-    color: #65717c;
-    line-height: 1.8;
-    text-align: justify;
-}
+            max-width: 750px;
+            color: #65717c;
+            line-height: 1.8;
+            text-align: justify;
+        }
 
         /* SKILLS */
+
+        .skill-group {
+            margin-bottom: 28px;
+        }
+
+        .skill-group:last-child {
+            margin-bottom: 0;
+        }
+
+        .skill-group-title {
+            font-size: 13px;
+            color: #18222d;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
 
         .skills {
             display: flex;
@@ -139,6 +169,38 @@
             padding: 9px 15px;
             border-radius: 4px;
             font-size: 14px;
+        }
+
+        /* EXPERIENCE */
+
+        .experience-item {
+            margin-bottom: 30px;
+        }
+
+        .experience-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .experience-item h4 {
+            color: #1d5c63;
+            font-size: 18px;
+            margin-bottom: 4px;
+        }
+
+        .experience-meta {
+            color: #89939b;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+
+        .experience-item ul {
+            color: #65717c;
+            font-size: 14px;
+            padding-left: 18px;
+        }
+
+        .experience-item li {
+            margin-bottom: 4px;
         }
 
         /* PROJECTS */
@@ -176,10 +238,9 @@
 
         /* RESUME */
 
-        .resume-btn:disabled
-        {
+        .resume-btn:disabled {
             opacity: 0.6;
-    cursor: not-allowed;
+            cursor: not-allowed;
             display: inline-block;
             margin-top: 10px;
             padding: 12px 25px;
@@ -202,6 +263,12 @@
             color: #1d5c63;
             text-decoration: none;
             margin-right: 20px;
+        }
+
+        .contact-meta {
+            color: #65717c;
+            font-size: 14px;
+            margin-bottom: 18px;
         }
 
         /* FOOTER */
@@ -253,14 +320,16 @@
     <nav>
 
         <a href="index.html" class="logo">
-    UJWAL CHOUDHARY
-</a>
+            UJWAL CHOUDHARY
+        </a>
 
         <div>
 
             <a href="#about">About</a>
 
             <a href="#skills">Skills</a>
+
+            <a href="#experience">Experience</a>
 
             <a href="#projects">Projects</a>
 
@@ -283,7 +352,7 @@
         <section class="hero">
 
             <div class="section-label">
-                NETWORK ENGINEER
+                SOC ANALYST
             </div>
 
             <h1>
@@ -291,12 +360,19 @@
             </h1>
 
             <h2>
-                Networking & Cybersecurity
+                Cybersecurity &amp; Security Operations
             </h2>
 
             <p>
-                Computer Science Engineering graduate seeking an entry-level Network Engineer position to apply knowledge of networking, troubleshooting, and IT infrastructure.
+                Computer Science Engineering graduate with a strong foundation in Cybersecurity, SOC Operations, SIEM, Networking and Log Analysis. Hands-on exposure to Wazuh, Microsoft Sentinel, Wireshark and Nmap — seeking a long-term career in SOC and Cybersecurity.
             </p>
+
+            <div class="hero-tags">
+                <div class="hero-tag">Amravati, Maharashtra</div>
+                <div class="hero-tag">Fresher / Entry-level</div>
+                <div class="hero-tag">Open to Relocation</div>
+                <div class="hero-tag">Rotational Shifts</div>
+            </div>
 
         </section>
 
@@ -314,8 +390,8 @@
             </h3>
 
             <p class="about-text">
-    Computer Science Engineering graduate seeking an entry-level Network Engineer position to apply knowledge of networking, troubleshooting, and IT infrastructure. Familiar with TCP/IP, OSI Model, IP Addressing, DNS, DHCP, Routing, Switching, and Network Security Fundamentals. Eager to troubleshoot real-world network issues and contribute to reliable and secure network infrastructure.
-</p>
+                Computer Science Engineering graduate (2022–2026, CGPA: 8.3/10) with a strong foundation in Cybersecurity, SOC Operations, SIEM, Networking and Log Analysis. Hands-on exposure to Wazuh, Microsoft Sentinel, Wireshark and Nmap, with a working understanding of security monitoring, alert triage, incident investigation and threat detection. Currently preparing to join RootSecured Consultant Pvt. Ltd. as a SOC Intern, with responsibilities spanning SIEM-based monitoring, log analysis across Windows, Linux, network and firewall systems, and incident documentation. Focused on building a long-term career in Security Operations.
+            </p>
 
         </section>
 
@@ -332,68 +408,92 @@
                 Technical Skills
             </h3>
 
-            <div class="skills">
+            <div class="skill-group">
+                <div class="skill-group-title">SOC &amp; Cybersecurity</div>
+                <div class="skills">
+                    <div class="skill">Security Monitoring</div>
+                    <div class="skill">Alert Triage</div>
+                    <div class="skill">Log Analysis</div>
+                    <div class="skill">Incident Investigation</div>
+                    <div class="skill">Incident Response Fundamentals</div>
+                    <div class="skill">Threat Detection</div>
+                    <div class="skill">Threat Hunting Basics</div>
+                    <div class="skill">IOC Analysis</div>
+                    <div class="skill">MITRE ATT&amp;CK</div>
+                </div>
+            </div>
 
-                <div class="skill">TCP/IP</div>
+            <div class="skill-group">
+                <div class="skill-group-title">SIEM &amp; Security Tools</div>
+                <div class="skills">
+                    <div class="skill">Wazuh</div>
+                    <div class="skill">Microsoft Sentinel</div>
+                    <div class="skill">Splunk</div>
+                    <div class="skill">Wireshark</div>
+                    <div class="skill">Nmap</div>
+                </div>
+            </div>
 
-                <div class="skill">OSI Model</div>
+            <div class="skill-group">
+                <div class="skill-group-title">Networking</div>
+                <div class="skills">
+                    <div class="skill">TCP/IP</div>
+                    <div class="skill">DNS</div>
+                    <div class="skill">DHCP</div>
+                    <div class="skill">ARP</div>
+                    <div class="skill">IP Addressing</div>
+                    <div class="skill">HTTP/HTTPS</div>
+                    <div class="skill">Ports &amp; Protocols</div>
+                    <div class="skill">Network Traffic Analysis</div>
+                </div>
+            </div>
 
-                <div class="skill">IPv4</div>
+            <div class="skill-group">
+                <div class="skill-group-title">Systems &amp; Tools</div>
+                <div class="skills">
+                    <div class="skill">Windows</div>
+                    <div class="skill">Linux</div>
+                    <div class="skill">SQL</div>
+                    <div class="skill">MS Excel</div>
+                    <div class="skill">MS Word</div>
+                    <div class="skill">Technical Documentation</div>
+                </div>
+            </div>
 
-                <div class="skill">IPv6 Basics</div>
+        </section>
 
-                <div class="skill">IP Addressing</div>
 
-                <div class="skill">Subnetting Basics</div>
+        <!-- EXPERIENCE -->
 
-                <div class="skill">LAN</div>
+        <section id="experience">
 
-                <div class="skill">WAN</div>
+            <div class="section-label">
+                03 // EXPERIENCE
+            </div>
 
-                <div class="skill">DNS</div>
+            <h3>
+                Professional Opportunities
+            </h3>
 
-                <div class="skill">DHCP</div>
+            <div class="experience-item">
+                <h4>SOC Intern — RootSecured Consultant Pvt. Ltd.</h4>
+                <div class="experience-meta">Nagpur — On-site · Joining 17 August 2026</div>
+                <ul>
+                    <li>Offered an entry-level SOC Intern position with exposure to Security Operations Center activities</li>
+                    <li>Role involves SIEM-based security monitoring, alert triage and suspicious activity investigation</li>
+                    <li>Responsibilities include analyzing Windows, Linux, network and firewall security logs</li>
+                    <li>Exposure to incident investigation, SOC playbooks, basic threat hunting and security incident documentation</li>
+                </ul>
+            </div>
 
-                <div class="skill">ARP</div>
-
-                <div class="skill">NAT</div>
-
-                <div class="skill">Routing Fundamentals</div>
-
-                <div class="skill">Switching Fundamentals</div>
-
-                <div class="skill">VLAN Basics</div>
-
-                <div class="skill">Static Routing Basics</div>
-
-                <div class="skill">Default Gateway</div>
-
-                <div class="skill">Ping & Tracert</div>
-
-                <div class="skill">IP Configuration</div>
-
-                <div class="skill">DNS Troubleshooting</div>
-
-                <div class="skill">Connectivity Troubleshooting</div>
-
-                <div class="skill">Firewall Fundamentals</div>
-
-                <div class="skill">Network Security Basics</div>
-
-                <div class="skill">Common Network Threats</div>
-
-                <div class="skill">Wireshark</div>
-
-                <div class="skill">Cisco Packet Tracer</div>
-
-                <div class="skill">Nmap</div>
-
-                <div class="skill">Oracle VirtualBox</div>
-
-                <div class="skill">Windows</div>
-
-                <div class="skill">Linux Basics</div>
-
+            <div class="experience-item">
+                <h4>Network Engineer — CLOUDUNICORN PRIVATE LIMITED</h4>
+                <div class="experience-meta">Bangalore · July 2026</div>
+                <ul>
+                    <li>Received an opportunity for an entry-level Network Engineer position</li>
+                    <li>Opportunity aligned with networking and IT infrastructure operations</li>
+                    <li>Strengthened practical understanding of networking concepts relevant to cybersecurity and SOC operations</li>
+                </ul>
             </div>
 
         </section>
@@ -404,7 +504,7 @@
         <section id="projects">
 
             <div class="section-label">
-                03 // PROJECTS
+                04 // PROJECTS
             </div>
 
             <h3>
@@ -418,11 +518,11 @@
                 <div class="project">
 
                     <h4>
-                        Network Analysis & Packet Capture – Wireshark
+                        Wazuh SIEM — Security Monitoring Lab
                     </h4>
 
                     <p>
-                        Captured TCP, UDP, DNS, ARP and HTTP/HTTPS traffic. Analyzed packets to understand network communication and practiced troubleshooting using packet analysis.
+                        Configured and explored Wazuh for centralized security monitoring and log analysis. Worked with security alerts and endpoint events in a lab environment, practicing alert investigation and identification of suspicious activities.
                     </p>
 
                 </div>
@@ -431,11 +531,11 @@
                 <div class="project">
 
                     <h4>
-                        Cisco Networking Lab – Packet Tracer
+                        APT29 Threat Intelligence &amp; MITRE ATT&amp;CK Analysis
                     </h4>
 
                     <p>
-                        Built router and switch topologies, configured IP addressing, tested connectivity, practiced routing concepts, and solved network connectivity issues.
+                        Researched APT29 attack techniques and mapped activities to MITRE ATT&amp;CK. Analyzed threat indicators and common tactics, techniques and procedures, documenting findings to understand SOC investigation workflows.
                     </p>
 
                 </div>
@@ -444,11 +544,11 @@
                 <div class="project">
 
                     <h4>
-                        Virtual Networking Lab
+                        Network Traffic Analysis — Wireshark
                     </h4>
 
                     <p>
-                        Used Oracle VirtualBox to practice networking in Windows and Linux, configured IP settings, performed troubleshooting, and tested connectivity.
+                        Captured and analyzed network traffic using Wireshark, investigating TCP/IP, DNS, HTTP/HTTPS and other common protocols while practicing identification of unusual network behavior.
                     </p>
 
                 </div>
@@ -464,20 +564,26 @@
         <section id="certifications">
 
             <div class="section-label">
-                04 // CERTIFICATIONS
+                05 // CERTIFICATIONS
             </div>
 
             <h3>
-                Certifications & Learning
+                Certifications &amp; Learning
             </h3>
 
             <div class="certifications">
+
+                <p>• Microsoft Office &amp; Computer Fundamentals</p>
 
                 <p>• Cybersecurity Fundamentals Training</p>
 
                 <p>• SQL Fundamentals</p>
 
                 <p>• Advanced Software Engineering Virtual Experience</p>
+
+                <p>• Cisco Networking Certification Course — Currently Pursuing</p>
+
+                <p>• German Language (A1) — Currently Learning</p>
 
             </div>
 
@@ -489,7 +595,7 @@
         <section id="resume">
 
             <div class="section-label">
-                05 // RESUME
+                06 // RESUME
             </div>
 
             <h3>
@@ -497,12 +603,12 @@
             </h3>
 
             <p class="about-text">
-                Computer Science Engineering graduate (2022–2026, CGPA: 8.3 / 10) seeking an entry-level Network Engineer position to apply knowledge of networking, troubleshooting, and IT infrastructure.
+                Computer Science Engineering graduate (2022–2026, CGPA: 8.3/10) with hands-on exposure to Wazuh, Microsoft Sentinel, Wireshark and Nmap, currently joining RootSecured Consultant Pvt. Ltd. as a SOC Intern. Seeking a long-term career in SOC and Cybersecurity.
             </p>
 
             <button class="resume-btn" disabled>
-    Resume Coming Soon
-</button>
+                Resume Coming Soon
+            </button>
 
         </section>
 
@@ -511,21 +617,33 @@
 
         <section id="contact">
 
+            <div class="section-label">
+                07 // CONTACT
+            </div>
+
+            <h3>
+                Get In Touch
+            </h3>
+
+            <div class="contact-meta">
+                Amravati, Maharashtra, India · choudharyujwal2004@gmail.com · +91 77090 49121
+            </div>
+
             <div class="contact-links">
 
-    <a href="https://www.linkedin.com/in/ujwal-choudhary" target="_blank">
-        LinkedIn
-    </a>
+                <a href="https://www.linkedin.com/in/ujwal-choudhary" target="_blank">
+                    LinkedIn
+                </a>
 
-    <a href="https://github.com/choudharyujwal" target="_blank">
-        GitHub
-    </a>
+                <a href="https://github.com/choudharyujwal" target="_blank">
+                    GitHub
+                </a>
 
-    <a href="https://www.instagram.com/latent_kernel" target="_blank">
-        Instagram
-    </a>
+                <a href="https://www.instagram.com/latent_kernel" target="_blank">
+                    Instagram
+                </a>
 
-</div>
+            </div>
 
         </section>
 
@@ -535,7 +653,7 @@
 
     <footer>
 
-        © 2026 Ujwal Choudhary · Network Engineer Portfolio
+        © 2026 Ujwal Choudhary · SOC Analyst Portfolio
 
     </footer>
 
